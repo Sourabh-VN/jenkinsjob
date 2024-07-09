@@ -25,9 +25,11 @@ pipeline {
         stage('Docker Build') {
             steps {
                 script {
+                    docker.withRegistry('','dockerRegistry'){
                     dockerBuildAndPush(DOCKER_IMAGE_NAME, DOCKER_IMAGE_TAG, DOCKER_FILE_PATH, 'dockerRegistry')
 
 
+                   }
                 }
             }
         }
