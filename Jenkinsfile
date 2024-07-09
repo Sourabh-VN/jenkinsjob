@@ -6,8 +6,8 @@ pipeline {
         stage('Checkout') {
             steps{
                     def config =[
-                        url: 'https://github.com/Sourabh-VN/jenkinsjob.git'
-                        branch: 'main'
+                        url: 'https://github.com/Sourabh-VN/jenkinsjob.git',
+                        branch: 'main',
                         credId: 'gitthubtoken'
                     ]
 
