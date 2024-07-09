@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps{
-                    def config =[
+                    def config= [
                         url: 'https://github.com/Sourabh-VN/jenkinsjob.git',
                         branch: 'main',
                         credId: 'githubtoken'
