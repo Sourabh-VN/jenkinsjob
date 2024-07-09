@@ -3,7 +3,7 @@
 pipeline {
     agent any
     environment{
-        DOCKER_IMAGE_NAME= 'project'
+        DOCKER_IMAGE_NAME= 'sourabhvn/project'
         DOCKER_IMAGE_TAG= 'latest'
         DOCKER_FILE_PATH='./Dockerfile'
     }
