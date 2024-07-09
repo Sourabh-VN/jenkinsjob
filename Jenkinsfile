@@ -8,7 +8,7 @@ pipeline {
                     def config =[
                         url: 'https://github.com/Sourabh-VN/jenkinsjob.git',
                         branch: 'main',
-                        credId: 'gitthubtoken'
+                        credId: 'githubtoken'
                     ]
 
                 gitCheckout(config)
