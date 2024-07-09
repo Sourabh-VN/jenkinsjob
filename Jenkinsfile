@@ -3,8 +3,8 @@
 pipeline {
     agent any
     environment{
-        DOCKER_IMAGE_NAME= 'python'
-        DOCKER_IMAGE_TAG= '3.9.19-slim-bullseye'
+        DOCKER_IMAGE_NAME= 'project'
+        DOCKER_IMAGE_TAG= 'latest'
         DOCKER_FILE_PATH='./Dockerfile'
     }
     stages {
