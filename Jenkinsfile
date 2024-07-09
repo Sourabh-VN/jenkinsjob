@@ -1,10 +1,10 @@
 @Library('my_library')
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('Checkout'){
+    stages {
+        stage('Checkout') {
             steps{
-                script{
+                script {
                     def config =[
                         url: 'https://github.com/Sourabh-VN/jenkinsjob.git'
                         branch: 'main'
